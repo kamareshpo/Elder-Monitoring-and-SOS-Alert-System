@@ -1,42 +1,47 @@
-# Elder-Monitoring-and-SOS-Alert-System
-AI-based elderly monitoring system using computer vision to detect falls, SOS gestures, and inactivity, with real-time alerts via Telegram.
+# 🧠 AI-Based Elder Monitoring System
 
-AI-Based Elder Monitoring System
-Overview
+## 📌 Overview
+The **AI-Based Elder Monitoring System** is a real-time safety solution designed to monitor elderly individuals using computer vision and AI techniques.  
+It detects **falls, emergency gestures, and inactivity**, and sends instant alerts with media evidence to caregivers.
 
-The AI-Based Elder Monitoring System is a real-time safety solution designed to monitor elderly individuals using computer vision and AI.
+---
 
-It detects:
+## 🎯 Features
 
-Falls
-Emergency gestures
-No movement (inactivity)
+- 🚨 **Fall Detection**
+  - Multi-condition scoring (pose, velocity, body angle)
+  - Time-based validation to reduce false alerts
 
-And sends instant alerts with photo, video, and sound to caregivers.
+- ✋ **SOS Gesture Detection**
+  - Both hands raised → emergency alert  
+  - Hand on chest (held for 5 seconds) → SOS trigger  
+  - Stability filtering to avoid random detections  
 
-Features
-Fall Detection
-Uses pose estimation (MediaPipe)
-Multi-condition scoring system
-Reduces false alarms using time validation
-SOS Gesture Detection
-Detects:
-Raised hands (help signal)
-Hand on chest
-Fist gesture
-Works even in low light
-No Movement Detection
-Detects inactivity for long duration
-Sends alert if no motion is detected
-📹 Smart Recording
-Records:
-Video + audio
-Snapshot image
-Automatically triggered during alerts
-Night Vision Mode
-Works in darkness using enhanced vision
-Supports green / thermal / white modes
-Alert System
-Telegram alerts (message + image + video)
-Local buzzer alarm
-Mobile alarm trigger
+- 💤 **No Movement Detection**
+  - Detects inactivity for long duration  
+  - Sends alert if no movement is detected  
+
+- 📹 **Auto Video Recording**
+  - Records video + audio during alert  
+  - Captures snapshot for quick verification  
+
+- 🌙 **Night Vision Mode**
+  - Enhanced visibility in low-light conditions  
+
+- 🔔 **Alert System**
+  - Telegram notifications (photo + video + message)  
+  - Local buzzer alert  
+  - Mobile alarm trigger  
+
+---
+
+## 🛠 Tech Stack
+
+- **Programming:** Python  
+- **Computer Vision:** OpenCV, MediaPipe  
+- **Backend:** Flask  
+- **APIs:** Telegram Bot API  
+- **Audio/Video:** FFmpeg, SoundDevice  
+- **Others:** NumPy, Threading  
+
+---

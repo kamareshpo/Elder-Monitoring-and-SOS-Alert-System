@@ -1,0 +1,15 @@
+# requirements.txt  — Elder Monitoring System
+opencv-python
+mediapipe
+requests
+sounddevice
+scipy
+
+# winsound is built into Windows Python — NO INSTALL NEEDED
+
+# ffmpeg (needed for audio merge + Telegram beep)
+# Install via ONE of these in PowerShell (run as Administrator):
+#   winget install --id Gyan.FFmpeg
+#   choco install ffmpeg        (if Chocolatey is installed)
+# Or download manually: https://www.gyan.dev/ffmpeg/builds/
+# and add the bin\ folder to your PATH environment variable.
